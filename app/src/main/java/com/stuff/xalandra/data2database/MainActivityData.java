@@ -45,7 +45,8 @@ public class MainActivityData extends Activity {
                 // Launching create new product activity
                 Intent i = new Intent(getApplicationContext(), NewProductActivity.class);
                 startActivity(i);
-
+                //sluit mainactivity
+                finish();
             }
         });
     }

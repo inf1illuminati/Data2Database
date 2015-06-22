@@ -10,12 +10,12 @@
     android:gravity="center_horizontal"
     tools:context=".MainActivityData">
 
+    <!-- label -->
     <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView" />
 
-    <!--  Sample Dashboard screen with Two buttons -->
-    <!--  Button to view all products screen -->
+    <!--  Dummy link -->
     <Button android:id="@+id/btnViewProducts"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
-    <!--  Button to create a new product screen -->
+    <!--  Button volgende pagina -->
     <Button android:id="@+id/btnCreateProduct"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

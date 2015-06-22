@@ -29,12 +29,13 @@ public class NewProductActivity extends Activity {
     // Progress Dialog
     private ProgressDialog pDialog;
 
+    // nieuw jsonparser object
     JSONParser jsonParser = new JSONParser();
     EditText inputName;
     EditText inputPrice;
     EditText inputDesc;
 
-    // url to create new product
+    // url om waarden in database te zetten
     private static String url_create_product = "http://robotarm.serverict.nl/testjd/create.php";
 
     // JSON Node names
@@ -86,15 +87,15 @@ public class NewProductActivity extends Activity {
          * Creating product
          * */
         protected String doInBackground(String... args) {
-            String name = inputName.getText().toString();
-            String price = inputPrice.getText().toString();
-            String description = inputDesc.getText().toString();
+            String x = inputName.getText().toString();
+            String y = inputPrice.getText().toString();
+            String z = inputDesc.getText().toString();
 
             // Building Parameters
             List<NameValuePair> params = new ArrayList<NameValuePair>();
-            params.add(new BasicNameValuePair("name", name));
-            params.add(new BasicNameValuePair("price", price));
-            params.add(new BasicNameValuePair("description", description));
+            params.add(new BasicNameValuePair("x", x));
+            params.add(new BasicNameValuePair("y", y));
+            params.add(new BasicNameValuePair("z", z));
 
             // getting JSON Object
             // Note that create product url accepts POST method

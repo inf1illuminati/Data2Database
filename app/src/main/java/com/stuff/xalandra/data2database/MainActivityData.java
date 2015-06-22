@@ -13,6 +13,7 @@ import android.widget.Button;
 
 public class MainActivityData extends Activity {
 
+    //knoppen
     Button btnViewProducts;
     Button btnNewProduct;
 

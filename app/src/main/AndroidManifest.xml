@@ -18,10 +18,10 @@
             </intent-filter>
         </activity>
 
-        <!-- Add Product Activity -->
+        <!-- Add info to database -->
         <activity
             android:name=".NewProductActivity"
-            android:label="Add New Product" >
+            android:label="Voeg toe aan database" >
         </activity>
 
     </application>
